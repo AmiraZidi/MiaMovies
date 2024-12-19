@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav .lg img {
+    width: 3%;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav .logo {
+    font-size: 30px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    color: #e50914;
+    letter-spacing: 1px;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+        margin-left: auto;
+    width: 75%;
+}
+
+nav .nav-links li {
+    margin-right: 30px;
+}
+
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+nav .nav-links a:hover{
+    color: #e50914;
+    text-decoration: underline;
+}
+
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+nav .profile img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 15px;
+    }
+
+    nav .lg img {
+        width: 5%;
+    }
+
+    nav .logo {
+        font-size: 26px;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    nav .nav-links li {
+        margin-bottom: 15px;
+    }
+
+    nav .profile img {
+        width: 35px;
+    }
+}
+  
+
+/* Movie Banner */
+.movie-banneravengers {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url('./img/avengers.png');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.movie-bannerpanther {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 0%), url('https://ss-images.saostar.vn/w700/2018/02/28/2292791/bp1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.movie-bannerinfinity {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 0%), url('https://kapionews.com/wp-content/uploads/2018/04/Infinity-War.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.movie-bannerultron {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 0%), url('https://townsquare.media/site/442/files/2015/04/avengers-tag.jpg?w=780&q=75');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.movie-bannerironman {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 0%), url('https://media.contentapi.ea.com/content/dam/news/www-ea/images/2022/09/ea-motive-new-title-teaser-16x9-featured.jpg.adapt.crop16x9.575p.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.movie-banner .banner-content {
+    max-width: 800px;
+}
+
+.movie-banner h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 800;
+}
+
+.movie-banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Video Container */
+.video-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e50914;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.video-title h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.video-iframe {
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.video-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #777;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Optional: Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .movie-banner h2 {
+        font-size: 40px;
+    }
+
+    .movie-banner p {
+        font-size: 16px;
+    }
+
+    .video-title h2 {
+        font-size: 28px;
+    }
+
+    .video-container {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
